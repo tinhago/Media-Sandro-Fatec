@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float nota1, nota2, prova1, prova2, trabalho1, trabalho2, media;
+
+    printf("Informe nota do primeiro trabalho ");
+    scanf("%f", & trabalho1);
+
+    printf("Informe nota da primeira prova ");
+    scanf("%f", & prova1);
+
+    printf("Informe nota do segundo trabalho ");
+    scanf("%f", & trabalho2);
+
+    printf("Informe nota da segunda prova ");
+    scanf("%f", & prova2);
+
+    nota1 = (prova1 * 0.2) + (trabalho1 * 0.8);
+    nota2 = (prova2 * 0.2) + (trabalho2 * 0.8);
+    media = (nota1 + nota2) /2;
+
+        if(media<6){
+            printf("Sua media foi de %f. Reprovado", media);
+        }else{
+            printf("Sua media foi de %f. Aprovado", media);
+        }
+
+    return 0;
+}
